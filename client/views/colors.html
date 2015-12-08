@@ -1,7 +1,11 @@
 <template name="colors">
   <style>
+    .navbar.navbar-expanded li.move a {
+       color: {{ dict 'colors.alt' }};
+    }
+
     .navbar li.social a {
-      background-color: {{ dict 'colors.alt' }} !important;
+      background-color: {{ dict 'colors.alt' }};
     }
 
     header {
