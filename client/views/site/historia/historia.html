@@ -1,9 +1,28 @@
 <template name="historia">
 	<section id="historia">
 		<div class="container text-center wow fadeIn">
-      <br><br>
 			<h2>{{ dict 'historia.title' }}</h2>
 			<p>{{ dict 'historia.subtitle' }}</p>
+
+			<br>
+			<div class="images row">
+        {{# each items }}
+          <div class="col-sm-4">
+            <div class="image-item" style="background-image:url({{ image.url }})"></div>
+            <div class="image-rollover">
+              <p>
+                {{ description }}<br>
+								{{# if url }}
+									<a href="{{ url }}" target="_blank" style="font-size: 14px; font-weight: 300">{{ urlLabel }}</a>
+								{{ else }}
+									<span style="font-size: 14px; font-weight: 300">{{ urlLabel }}</span>
+								{{/ if }}
+              </p>
+            </div>
+          </div>
+        {{/ each }}
+      </div>
+			<br><br>
 		</div>
 	</section>
 </template>
