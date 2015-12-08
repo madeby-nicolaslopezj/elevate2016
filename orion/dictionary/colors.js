@@ -46,6 +46,14 @@ orion.dictionary.addDefinition('inter', 'colors', {
   }
 });
 
+orion.dictionary.addDefinition('djs', 'colors', {
+  type: String,
+  label: 'DJs',
+  autoform: {
+    type: 'color',
+  }
+});
+
 orion.dictionary.addDefinition('contacto', 'colors', {
   type: String,
   label: 'Contacto',

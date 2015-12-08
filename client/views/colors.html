@@ -136,5 +136,32 @@
     li.move.contacto a:focus {
       color: {{ dict 'colors.contacto' }} !important;
     }
+
+    /*DJs*/
+
+    #djs:before {
+      background: linear-gradient(-45deg, {{ dict 'colors.djs' }} 16px, transparent 0), linear-gradient(45deg, {{ dict 'colors.djs' }} 16px, transparent 0);
+      background-position: left-bottom;
+      background-repeat: repeat-x;
+      background-size: 32px 32px;
+    }
+
+    #djs:after {
+      background: linear-gradient(135deg, {{ dict 'colors.djs' }} 16px, transparent 0), linear-gradient(-135deg, {{ dict 'colors.djs' }} 16px, transparent 0);
+      background-position: left-bottom;
+      background-repeat: repeat-x;
+      background-size: 32px 32px;
+    }
+    #djs {
+      background-color: {{ dict 'colors.djs' }};
+    }
+
+    li.move.djs.active a,
+    li.move.djs.active:hover,
+    li.move.djs.active:focus,
+    li.move.djs a:hover,
+    li.move.djs a:focus {
+      color: {{ dict 'colors.djs' }} !important;
+    }
   </style>
 </template>
