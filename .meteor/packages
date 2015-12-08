@@ -31,3 +31,4 @@ orionjs:image-attribute
 orionjs:s3
 nicolaslopezj:orion-exporter
 nicolaslopezj:orion-admin-only-bootstrap
+useraccounts:iron-routing
