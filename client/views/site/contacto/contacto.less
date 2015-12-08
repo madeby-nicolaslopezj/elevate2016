@@ -4,7 +4,6 @@
 @form-color: rgb(68, 69, 10);
 
 #contacto {
-	background-color: @color;
 	color: @text-color;
 
 	h2 {
@@ -63,21 +62,8 @@
 	}
 }
 
-li.move.contacto {
-	&.active a,
-	&.active:hover,
-	&.active:focus,
-	a:hover,
-	a:focus {
-		color: @color !important;
-	}
-}
 
 #contacto:before {
-	background: linear-gradient(-45deg, @color 16px, transparent 0), linear-gradient(45deg, @color 16px, transparent 0);
-    background-position: left-bottom;
-    background-repeat: repeat-x;
-    background-size: 32px 32px;
     content: " ";
     display: block;
     position: relative;
@@ -88,10 +74,6 @@ li.move.contacto {
 }
 
 #contacto:after {
-	background: linear-gradient(135deg, @color 16px, transparent 0), linear-gradient(-135deg, @color 16px, transparent 0);
-    background-position: left-bottom;
-    background-repeat: repeat-x;
-    background-size: 32px 32px;
     content: " ";
     display: block;
     position: relative;

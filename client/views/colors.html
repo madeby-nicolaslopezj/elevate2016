@@ -1,0 +1,140 @@
+<template name="colors">
+  <style>
+    .navbar li.social a {
+      background-color: {{ dict 'colors.alt' }} !important;
+    }
+
+    header {
+      background-color: {{ dict 'colors.header' }} !important;
+    }
+
+    .scroll-down .btn,
+    .scroll-down .btn:hover,
+    .scroll-down .btn:focus {
+      border: 2px solid {{ dict 'colors.alt' }} !important;
+      color: {{ dict 'colors.alt' }} !important;
+    }
+
+    #features:before {
+      background: linear-gradient(-45deg, {{ dict 'colors.features' }} 16px, transparent 0), linear-gradient(45deg, {{ dict 'colors.features' }} 16px, transparent 0);
+      background-position: left-bottom;
+      background-repeat: repeat-x;
+      background-size: 32px 32px;
+    }
+    #features {
+      background-color: {{ dict 'colors.features' }};
+    }
+
+    li.move.features.active a,
+    li.move.features.active:hover,
+    li.move.features.active:focus,
+    li.move.features a:hover,
+    li.move.features a:focus {
+      color: {{ dict 'colors.features' }} !important;
+    }
+
+    #tickets:before {
+      background: linear-gradient(-45deg, {{ dict 'colors.tickets' }} 16px, transparent 0), linear-gradient(45deg, {{ dict 'colors.tickets' }} 16px, transparent 0);
+      background-position: left-bottom;
+      background-repeat: repeat-x;
+      background-size: 32px 32px;
+    }
+
+    #tickets:after {
+      background: linear-gradient(135deg, {{ dict 'colors.tickets' }} 16px, transparent 0), linear-gradient(-135deg, {{ dict 'colors.tickets' }} 16px, transparent 0);
+      background-position: left-bottom;
+      background-repeat: repeat-x;
+      background-size: 32px 32px;
+    }
+    #tickets {
+      background-color: {{ dict 'colors.tickets' }};
+    }
+
+    li.move.tickets.active a,
+    li.move.tickets.active:hover,
+    li.move.tickets.active:focus,
+    li.move.tickets a:hover,
+    li.move.tickets a:focus {
+      color: {{ dict 'colors.tickets' }} !important;
+    }
+
+    #tickets .btn-outline-light:hover {
+      color: {{ dict 'colors.tickets' }};
+    }
+
+    .tickets-quote hr.colored {
+      border-color: {{ dict 'colors.tickets' }};
+    }
+
+    .tickets-quote .quote strong {
+  		color: {{ dict 'colors.tickets' }};
+  	}
+
+    .tickets-quote .btn-outline-light:hover,
+  	.tickets-quote .btn-outline-light:focus {
+      color: {{ dict 'colors.tickets' }};
+    }
+
+    /*Barra*/
+
+    #barra:before {
+      background: linear-gradient(-45deg, {{ dict 'colors.barra' }} 16px, transparent 0), linear-gradient(45deg, {{ dict 'colors.barra' }} 16px, transparent 0);
+      background-position: left-bottom;
+      background-repeat: repeat-x;
+      background-size: 32px 32px;
+    }
+
+    #barra:after {
+      background: linear-gradient(135deg, {{ dict 'colors.barra' }} 16px, transparent 0), linear-gradient(-135deg, {{ dict 'colors.barra' }} 16px, transparent 0);
+      background-position: left-bottom;
+      background-repeat: repeat-x;
+      background-size: 32px 32px;
+    }
+    #barra {
+      background-color: {{ dict 'colors.barra' }};
+    }
+
+    li.move.barra.active a,
+    li.move.barra.active:hover,
+    li.move.barra.active:focus,
+    li.move.barra a:hover,
+    li.move.barra a:focus {
+      color: {{ dict 'colors.barra' }} !important;
+    }
+
+    .barra-btn-block {
+    	background-color: {{ dict 'colors.inter' }} !important;
+    }
+
+    .barra-btn-block:hover {
+    	background-color: {{ dict 'colors.alt' }} !important;
+    }
+
+    /*Contacto*/
+
+    #contacto:before {
+      background: linear-gradient(-45deg, {{ dict 'colors.contacto' }} 16px, transparent 0), linear-gradient(45deg, {{ dict 'colors.contacto' }} 16px, transparent 0);
+      background-position: left-bottom;
+      background-repeat: repeat-x;
+      background-size: 32px 32px;
+    }
+
+    #contacto:after {
+      background: linear-gradient(135deg, {{ dict 'colors.contacto' }} 16px, transparent 0), linear-gradient(-135deg, {{ dict 'colors.contacto' }} 16px, transparent 0);
+      background-position: left-bottom;
+      background-repeat: repeat-x;
+      background-size: 32px 32px;
+    }
+    #contacto {
+      background-color: {{ dict 'colors.contacto' }};
+    }
+
+    li.move.contacto.active a,
+    li.move.contacto.active:hover,
+    li.move.contacto.active:focus,
+    li.move.contacto a:hover,
+    li.move.contacto a:focus {
+      color: {{ dict 'colors.contacto' }} !important;
+    }
+  </style>
+</template>
