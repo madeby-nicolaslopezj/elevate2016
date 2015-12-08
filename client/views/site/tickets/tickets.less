@@ -1,0 +1,77 @@
+@color: rgb(246, 8, 87);
+@text-color: white;
+@header-color: black;
+
+#tickets {
+	background-color: @color;
+	color: @text-color;
+
+	h2 {
+		color: @header-color;
+	}
+
+	hr.colored {
+		border-color: @text-color;
+	}
+
+	.btn-outline-light:hover {
+		color: @color;
+	}
+
+}
+
+.tickets-quote {
+	hr.colored {
+		border-color: @color;
+	}
+
+	.quote {
+		strong {
+			font-weight: 300;
+			color: @color;
+		}
+	}
+
+	.btn-outline-light:hover, 
+	.btn-outline-light:focus{
+		color: @color;
+	}
+}
+
+li.move.tickets {
+	&.active a,
+	&.active:hover,
+	&.active:focus,
+	a:hover,
+	a:focus {
+		color: @color !important;
+	}
+}
+
+#tickets:before {
+	background: linear-gradient(-45deg, @color 16px, transparent 0), linear-gradient(45deg, @color 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    content: " ";
+    display: block;
+    position: relative;
+    top: -92px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+}
+
+#tickets:after {
+	background: linear-gradient(135deg, @color 16px, transparent 0), linear-gradient(-135deg, @color 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    content: " ";
+    display: block;
+    position: relative;
+    bottom: -92px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+}

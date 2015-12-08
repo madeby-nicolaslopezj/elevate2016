@@ -1,0 +1,42 @@
+@link-color: rgb(246, 8, 87);
+
+.twitter {
+	.twitter-divider {
+		text-align: center;
+		color: white;
+		font-size: 40px;
+		padding-top: 20px;
+		margin-bottom: -50px;
+	}
+
+	a {
+		color: @link-color;
+	}
+
+	.carousel {
+		.item {
+			color: white;
+			padding: 70px 0;
+		}
+	}
+}
+
+.carousel-control {
+	// Toggles
+	.btn-left,
+	.btn-right{
+		position: absolute;
+		top: 40%;
+		z-index: 5;
+		display: inline-block;
+		font-size: 25px;
+	}
+	.btn-left{
+		left: 50%;
+		margin-left: -10px;
+	}
+	.btn-right{
+		right: 50%;
+		margin-right: -10px;
+	}
+}
