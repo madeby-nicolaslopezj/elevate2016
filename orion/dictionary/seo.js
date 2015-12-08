@@ -1,26 +1,22 @@
-orion.dictionary.addDefinition('seoTitle', 'seo', {
-	type: String,
-	label: "Title of the page",
-	optional: true,
+orion.dictionary.addDefinition('title', 'seo', {
+  type: String,
+  label: "Title of the page",
+  optional: true,
 });
 
-orion.dictionary.addDefinition('seoDescription', 'seo', {
-	type: String,
-	label: "Description",
-	optional: true,
-	autoform: {
-		type: 'textarea',
-	}
+orion.dictionary.addDefinition('description', 'seo', {
+  type: String,
+  label: "Description",
+  optional: true,
+  autoform: {
+    type: 'textarea',
+  }
 });
 
-orion.dictionary.addDefinition('seoImage', 'seo', {
-	type: orion.attributes.image,
-	label: "Image",
-	optional: true,
-});
+orion.dictionary.addDefinition('image', 'seo', orion.attribute('image', {
+	label: 'Image'
+}));
 
-orion.dictionary.addDefinition('seoFavIcon', 'seo', {
-	type: orion.attributes.image,
-	label: "Fav Icon",
-	optional: true,
-});
+orion.dictionary.addDefinition('favIcon', 'seo', orion.attribute('image', {
+	label: 'Image'
+}));

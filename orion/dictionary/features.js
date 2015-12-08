@@ -1,17 +1,15 @@
-orion.dictionary.addDefinition('featuresTitle', 'features', {
+orion.dictionary.addDefinition('title', 'features', {
     type: String,
     label: "Titulo",
     optional: true
 });
 
-orion.dictionary.addDefinition('featuresSubtitle', 'features', {
+orion.dictionary.addDefinition('subtitle', 'features', {
     type: String,
     label: "Sub Titulo",
     optional: true
 });
 
-orion.dictionary.addDefinition('featuresImage', 'features', {
-    type: orion.attributes.image,
-    label: "Imagen",
-    optional: true
-});
+orion.dictionary.addDefinition('image', 'features', orion.attribute('image', {
+  label: 'Imagen'
+}));

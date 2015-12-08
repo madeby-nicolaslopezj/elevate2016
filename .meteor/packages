@@ -3,8 +3,6 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-orionjs:admin
-orionjs:image-attribute
 less
 spiderable
 manuelschoebel:ms-seo
@@ -12,7 +10,6 @@ email
 copleykj:livestamp
 markdown
 reactive-var
-aldeed:autoform
 standard-minifiers
 meteor-base
 mobile-experience
@@ -27,3 +24,10 @@ random
 ejson
 spacebars
 check
+iron:router
+orionjs:core
+orionjs:bootstrap
+orionjs:image-attribute
+orionjs:s3
+nicolaslopezj:orion-exporter
+nicolaslopezj:orion-admin-only-bootstrap

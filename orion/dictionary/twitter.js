@@ -1,5 +1,3 @@
-orion.dictionary.addDefinition('twitterBackgroundImage', 'twitter', {
-    type: orion.attributes.image,
-    label: "Imagen de fondo",
-    optional: true
-});
+orion.dictionary.addDefinition('backgroundImage', 'twitter', orion.attribute('image', {
+  label: 'Imagen de fondo'
+}));
