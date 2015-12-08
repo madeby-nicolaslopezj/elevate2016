@@ -54,6 +54,14 @@ orion.dictionary.addDefinition('djs', 'colors', {
   }
 });
 
+orion.dictionary.addDefinition('historia', 'colors', {
+  type: String,
+  label: 'Historia',
+  autoform: {
+    type: 'color',
+  }
+});
+
 orion.dictionary.addDefinition('contacto', 'colors', {
   type: String,
   label: 'Contacto',

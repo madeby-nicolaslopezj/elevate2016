@@ -163,5 +163,32 @@
     li.move.djs a:focus {
       color: {{ dict 'colors.djs' }} !important;
     }
+
+    /*DJs*/
+
+    #historia:before {
+      background: linear-gradient(-45deg, {{ dict 'colors.historia' }} 16px, transparent 0), linear-gradient(45deg, {{ dict 'colors.historia' }} 16px, transparent 0);
+      background-position: left-bottom;
+      background-repeat: repeat-x;
+      background-size: 32px 32px;
+    }
+
+    #historia:after {
+      background: linear-gradient(135deg, {{ dict 'colors.historia' }} 16px, transparent 0), linear-gradient(-135deg, {{ dict 'colors.historia' }} 16px, transparent 0);
+      background-position: left-bottom;
+      background-repeat: repeat-x;
+      background-size: 32px 32px;
+    }
+    #historia {
+      background-color: {{ dict 'colors.historia' }};
+    }
+
+    li.move.historia.active a,
+    li.move.historia.active:hover,
+    li.move.historia.active:focus,
+    li.move.historia a:hover,
+    li.move.historia a:focus {
+      color: {{ dict 'colors.historia' }} !important;
+    }
   </style>
 </template>
